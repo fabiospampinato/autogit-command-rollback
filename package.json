@@ -1,0 +1,42 @@
+{
+  "name": "autogit-command-rollback",
+  "description": "A command for rolling back the history to that of the origin and discarding local changes.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc --skipLibCheck",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "lint": "tslint \"src/**/*.ts*\" --force",
+    "prepublish": "npm run clean && npm run lint && npm run compile"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiospampinato/autogit-command-rollback/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Fabio Spampinato",
+    "email": "spampinabio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiospampinato/autogit-command-rollback.git"
+  },
+  "keywords": [
+    "autogit",
+    "command",
+    "rollback",
+    "revert",
+    "reset"
+  ],
+  "dependencies": {
+    "autogit-plugin-rollback": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "rimraf": "^2.6.0",
+    "tslint": "^4.4.2",
+    "typescript": "^3.0.3"
+  }
+}
