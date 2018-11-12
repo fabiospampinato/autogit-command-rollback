@@ -30,4 +30,4 @@ function rollback ( customOptions?: Partial<options> ) {
 
 /* EXPORT */
 
-export = Object.assign ( rollback, { default: rollback } );
+export default rollback;
